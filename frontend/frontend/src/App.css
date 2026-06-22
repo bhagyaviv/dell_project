@@ -1,0 +1,61 @@
+/* 🚀 Global App Overhaul Styles for a Premium Dark Mode Layout */
+body {
+  background-color: #0f172a !important; /* Deep Slate Background */
+  color: #f8fafc !important;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Restructure the Main Dashboard container into a clean, modern grid */
+.dashboard {
+  display: grid;
+  grid-template-cols: 300px 1fr 350px; /* Node List | Charts Panel | Alerts Panel */
+  gap: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Modernize Layout Cards */
+.device-list, .analytics-panel, .alerts-panel {
+  background: #1e293b !important; /* Premium Charcoal-Blue Card Base */
+  border: 1px solid #334155 !important; /* Ultra-thin border definition */
+  border-radius: 16px !important; /* Softer, modern round corners */
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Interactive Dropdowns & Actions Control Bar Styling */
+.action-bar select {
+  background-color: #0f172a;
+  border: 1px solid #475569;
+  color: #f1f5f9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-bar select:focus {
+  border-color: #3b82f6; /* Dell Blue accent glow on focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.action-bar button {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+  transition: transform 0.1s ease, opacity 0.2s;
+}
+
+.action-bar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
